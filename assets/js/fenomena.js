@@ -22,6 +22,9 @@ function loadFenomena() {
   // DEBUG: tampilkan URL di konsol
   console.log("URL fetch:", url);
 
+  // ⏳ Tampilkan loading sebelum fetch
+  fenomenaList.innerHTML = `<p class="text-muted">⏳ Memuat...</p>`;
+
   fetch(url)
     .then(res => res.json())
     .then(data => {

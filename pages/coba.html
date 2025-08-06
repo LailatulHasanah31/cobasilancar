@@ -1,0 +1,15 @@
+<div id="hasil">Memuat data...</div>
+
+<script>
+  const tahun = "2023";
+  const triwulan = "III";
+
+  fetch(`https://script.google.com/macros/s/AKfycbyourScriptID/exec?tahun=${tahun}&triwulan=${triwulan}`)
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("hasil").innerText = `Tahun ${data.tahun} Triwulan ${data.triwulan}: ${data.nilai}`;
+    })
+    .catch(err => {
+      document.getElementById("hasil").innerText = "Gagal memuat data.";
+    });
+</script>
