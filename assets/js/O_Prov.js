@@ -41,90 +41,46 @@ function updateAllUraian() {
   // Tambahkan semua uraian kategori A yang ingin ditampilkan
   fetchQTQValue({
     baseUrl,
-    uraian: "a. tanaman pangan",
+    uraian: "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
     judul: "tabel 4",
-    targetId: "qtq_tanam_pangan_prov"
+    targetId: "qtq_belanja_apbn_pkp_prov"
   });
 
   fetchQTQValue({
     baseUrl,
-    uraian: "a. tanaman pangan",
+    uraian: "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
     judul: "tabel 5",
-    targetId: "yoy_tanam_pangan_prov"
+    targetId: "yoy_belanja_apbn_pkp_prov"
   });
 
   fetchQTQValue({
     baseUrl,
-    uraian: "a. tanaman pangan",
+    uraian: "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
     judul: "tabel 6",
-    targetId: "ctc_tanam_pangan_prov"
-  });
-
-  fetchQTQValue({
-    baseUrl,
-    uraian: "a. tanaman pangan",
-    judul: "tabel 4",
-    targetId: "qtq_padi_palawija_prov"
-  });
-
-  fetchQTQValue({
-    baseUrl,
-    uraian: "a. tanaman pangan",
-    judul: "tabel 5",
-    targetId: "yoy_padi_palawija_prov"
-  });
-
-  fetchQTQValue({
-    baseUrl,
-    uraian: "a. tanaman pangan",
-    judul: "tabel 6",
-    targetId: "ctc_padi_palawija_prov"
+    targetId: "ctc_belanja_apbn_pkp_prov"
   });
 
   // Tambah lagi jika ada kartu lain...
 
   fetchQTQValue({
     baseUrl,
-    uraian: "b. tanaman hortikultura semusim",
+    uraian: "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
     judul: "tabel 4",
-    targetId: "qtq_horti_semusim_prov"
+    targetId: "qtq_pegawai_BKPSDM_prov"
   });
 
   fetchQTQValue({
     baseUrl,
-    uraian: "b. tanaman hortikultura semusim",
+    uraian: "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
     judul: "tabel 5",
-    targetId: "yoy_horti_semusim_prov"
+    targetId: "yoy_pegawai_BKPSDM_prov"
   });
 
   fetchQTQValue({
     baseUrl,
-    uraian: "b. tanaman hortikultura semusim",
+    uraian: "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
     judul: "tabel 6",
-    targetId: "ctc_horti_semusim_prov"
-  });
-
-  // Tambah lagi jika ada kartu lain...
-
-  fetchQTQValue({
-    baseUrl,
-    uraian: "d. Tanaman Hortikultura Tahunan dan Lainnya",
-    judul: "tabel 4",
-    targetId: "qtq_horti_tahunan_prov"
-  });
-
-  fetchQTQValue({
-    baseUrl,
-    uraian: "d. Tanaman Hortikultura Tahunan dan Lainnya",
-    judul: "tabel 5",
-    targetId: "yoy_horti_tahunan_prov"
-  });
-
-  fetchQTQValue({
-    baseUrl,
-    uraian: "d. Tanaman Hortikultura Tahunan dan Lainnya",
-    judul: "tabel 6",
-    targetId: "ctc_horti_tahunan_prov"
+    targetId: "ctc_pegawai_BKPSDM_prov"
   });
 }
 

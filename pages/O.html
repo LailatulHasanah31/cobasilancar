@@ -37,7 +37,7 @@
   <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
 </head>
 
-<body class="g-sidenav-show  bg-gray-100" data-kategori="K">
+<body class="g-sidenav-show  bg-gray-100" data-kategori="O">
   <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
@@ -56,7 +56,7 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main" style="height: 120%;">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="../pages/A.html">
+          <a class="nav-link  " href="../pages/A.html">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>office </title>
@@ -79,7 +79,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="../pages/B.html">
+          <a class="nav-link  " href="../pages/B.html">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>office</title>
@@ -291,7 +291,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active " href="../pages/K.html">
+          <a class="nav-link  " href="../pages/K.html">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg width="12px" height="20px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>spaceship</title>
@@ -364,7 +364,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  " href="../pages/O.html">
+          <a class="nav-link active " href="../pages/O.html">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg width="12px" height="20px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>spaceship</title>
@@ -473,9 +473,10 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Lapangan Usaha</a></li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">K</li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">O</li>
           </ol>
-          <h6 class="font-weight-bolder mb-0">K. Jasa Keuangan dan Asuransi </h6>
+          <h6 class="font-weight-bolder mb-0">O. Administrasi Pemerintahan, Pertahanan dan </h6>
+          <h6 class="font-weight-bolder mb-0">Jaminan Sosial Wajib</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -607,19 +608,110 @@
       <!-- KIRI: Chart Produksi -->
       <div class="col-lg-8 mb-4"> 
         <div class="container-fluid py-4">
-          <h4>K.1. Jasa Perantara Keuangan</h4>
+          <h4>O. Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib</h4>
+          <h5 style="display: inline;">O. Pertumbuhan Produksi </h5>
+          <h5 style="color: rgb(3, 203, 3); display: inline;">Belanja APBN + 20% PKP </h5>
+          <h5 style="display: inline;">Periode Ini:</h5>
           <div class="row">
             <div class="col-12">
               <div class="row">
                 <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card" id="qtq_jasa_perantara_prov-card">
+                  <div class="card" id="qtq_belanja_apbn_pkp-card">
+                    <!-- Mask dihapus agar warna background bisa diganti -->
+                    <div class="card-body p-3 position-relative">
+                      <div class="row">
+                        <div class="col-8 text-start">
+                          <h5 class="text-white font-weight-bolder mb-0 mt-3">
+                            <strong id="qtq_belanja_apbn_pkp">-</strong>
+                          </h5>
+                          <span class="text-white text-sm">Q to Q</span>
+                        </div>
+                        <div class="col-4">
+                          <div class="dropdown text-end mb-6">
+                            <a href="javascript:;" class="cursor-pointer" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa fa-ellipsis-h text-white"></i>
+                            </a>
+                            <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownUsers1">
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card" id="yoy_belanja_apbn_pkp-card">
+                    <!-- Mask dihapus agar warna background bisa diganti -->
+                    <div class="card-body p-3 position-relative">
+                      <div class="row">
+                        <div class="col-8 text-start">
+                          <h5 class="text-white font-weight-bolder mb-0 mt-3">
+                            <strong id="yoy_belanja_apbn_pkp">-</strong>
+                          </h5>
+                          <span class="text-white text-sm">Y on Y</span>
+                        </div>
+                        <div class="col-4">
+                          <div class="dropdown text-end mb-6">
+                            <a href="javascript:;" class="cursor-pointer" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa fa-ellipsis-h text-white"></i>
+                            </a>
+                            <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownUsers1">
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card" id="ctc_belanja_apbn_pkp-card">
+                    <!-- Mask dihapus agar warna background bisa diganti -->
+                    <div class="card-body p-3 position-relative">
+                      <div class="row">
+                        <div class="col-8 text-start">
+                          <h5 class="text-white font-weight-bolder mb-0 mt-3">
+                            <strong id="ctc_belanja_apbn_pkp">-</strong>
+                          </h5>
+                          <span class="text-white text-sm">C to C</span>
+                        </div>
+                        <div class="col-4">
+                          <div class="dropdown text-end mb-6">
+                            <a href="javascript:;" class="cursor-pointer" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa fa-ellipsis-h text-white"></i>
+                            </a>
+                            <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownUsers1">
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card" id="qtq_belanja_apbn_pkp_prov-card">
                     <!-- Mask dihapus agar warna background bisa diganti -->
                     <div class="card-body p-3 position-relative">
                       <div class="row">
                         <div class="col-8 text-start">
                           <span class="text-white text-sm"></span>
                           <h5 class="text-white font-weight-bolder mb-0 mt-3">
-                            <strong id="qtq_jasa_perantara_prov">-</strong>
+                            <strong id="qtq_belanja_apbn_pkp_prov">-</strong>
                           </h5>
                           <span class="text-white text-sm">Q to Q (Provinsi)</span>
                         </div>
@@ -640,14 +732,14 @@
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card" id="yoy_jasa_perantara_prov-card">
+                  <div class="card" id="yoy_belanja_apbn_pkp_prov-card">
                     <!-- Mask dihapus agar warna background bisa diganti -->
                     <div class="card-body p-3 position-relative">
                       <div class="row">
                         <div class="col-8 text-start">
                           <span class="text-white text-sm"></span>
                           <h5 class="text-white font-weight-bolder mb-0 mt-3">
-                            <strong id="yoy_jasa_perantara_prov">-</strong>
+                            <strong id="yoy_belanja_apbn_pkp_prov">-</strong>
                           </h5>
                           <span class="text-white text-sm">Y on Y (Provinsi)</span>
                         </div>
@@ -668,14 +760,14 @@
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card" id="ctc_jasa_perantara_prov-card">
+                  <div class="card" id="ctc_belanja_apbn_pkp_prov-card">
                     <!-- Mask dihapus agar warna background bisa diganti -->
                     <div class="card-body p-3 position-relative">
                       <div class="row">
                         <div class="col-8 text-start">
                           <span class="text-white text-sm"></span>
                           <h5 class="text-white font-weight-bolder mb-0 mt-3">
-                            <strong id="ctc_jasa_perantara_prov">-</strong>
+                            <strong id="ctc_belanja_apbn_pkp_prov">-</strong>
                           </h5>
                           <span class="text-white text-sm">C to C (Provinsi)</span>
                         </div>
@@ -698,23 +790,131 @@
               </div>
             </div>
           </div>
-        </div>
-        <br>
+          <br>
+          <!-- Grafik Produksi -->
+          <div class="row">
+            <!-- KIRI: Chart Produksi -->
+            <div class="">
+              <div class="card shadow h-100">
+                <div class="card-header pb-0 p-3">
+                  <h6 class="mb-0">Grafik Belanja Modal + 20% PKP</h6>
+                </div>
+                <div class="card-body p-3" style="height: 300px;">
+                  <canvas id="chart_belanja_apbn_pkp" style="height: 100% !important;" 
+                    data-labels=""
+                    data-values="">
+                  </canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>   
+        
         
         <div class="container-fluid py-4">
-          <h4>K.2. Asuransi dan Dana Pensiun</h4>
+          <h5 style="display: inline;">O. Pertumbuhan Jumlah </h5>
+          <h5 style="color: rgb(3, 203, 3); display: inline;">Pegawai (Data BKPSDM) </h5>
+          <h5 style="display: inline;">Periode Ini:</h5>
           <div class="row">
             <div class="col-12">
               <div class="row">
                 <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card" id="qtq_asuransi_pensiun_prov-card">
+                  <div class="card" id="qtq_pegawai_BKPSDM-card">
+                    <!-- Mask dihapus agar warna background bisa diganti -->
+                    <div class="card-body p-3 position-relative">
+                      <div class="row">
+                        <div class="col-8 text-start">
+                          <h5 class="text-white font-weight-bolder mb-0 mt-3">
+                            <strong id="qtq_pegawai_BKPSDM">-</strong>
+                          </h5>
+                          <span class="text-white text-sm">Q to Q</span>
+                        </div>
+                        <div class="col-4">
+                          <div class="dropdown text-end mb-6">
+                            <a href="javascript:;" class="cursor-pointer" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa fa-ellipsis-h text-white"></i>
+                            </a>
+                            <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownUsers1">
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card" id="yoy_pegawai_BKPSDM-card">
+                    <!-- Mask dihapus agar warna background bisa diganti -->
+                    <div class="card-body p-3 position-relative">
+                      <div class="row">
+                        <div class="col-8 text-start">
+                          <h5 class="text-white font-weight-bolder mb-0 mt-3">
+                            <strong id="yoy_pegawai_BKPSDM">-</strong>
+                          </h5>
+                          <span class="text-white text-sm">Y on Y</span>
+                        </div>
+                        <div class="col-4">
+                          <div class="dropdown text-end mb-6">
+                            <a href="javascript:;" class="cursor-pointer" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa fa-ellipsis-h text-white"></i>
+                            </a>
+                            <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownUsers1">
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card" id="ctc_pegawai_BKPSDM-card">
+                    <!-- Mask dihapus agar warna background bisa diganti -->
+                    <div class="card-body p-3 position-relative">
+                      <div class="row">
+                        <div class="col-8 text-start">
+                          <h5 class="text-white font-weight-bolder mb-0 mt-3">
+                            <strong id="ctc_pegawai_BKPSDM">-</strong>
+                          </h5>
+                          <span class="text-white text-sm">C to C</span>
+                        </div>
+                        <div class="col-4">
+                          <div class="dropdown text-end mb-6">
+                            <a href="javascript:;" class="cursor-pointer" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa fa-ellipsis-h text-white"></i>
+                            </a>
+                            <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownUsers1">
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
+                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card" id="qtq_pegawai_BKPSDM_prov-card">
                     <!-- Mask dihapus agar warna background bisa diganti -->
                     <div class="card-body p-3 position-relative">
                       <div class="row">
                         <div class="col-8 text-start">
                           <span class="text-white text-sm"></span>
                           <h5 class="text-white font-weight-bolder mb-0 mt-3">
-                            <strong id="qtq_asuransi_pensiun_prov">-</strong>
+                            <strong id="qtq_pegawai_BKPSDM_prov">-</strong>
                           </h5>
                           <span class="text-white text-sm">Q to Q (Provinsi)</span>
                         </div>
@@ -735,14 +935,14 @@
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card" id="yoy_asuransi_pensiun_prov-card">
+                  <div class="card" id="yoy_pegawai_BKPSDM_prov-card">
                     <!-- Mask dihapus agar warna background bisa diganti -->
                     <div class="card-body p-3 position-relative">
                       <div class="row">
                         <div class="col-8 text-start">
                           <span class="text-white text-sm"></span>
                           <h5 class="text-white font-weight-bolder mb-0 mt-3">
-                            <strong id="yoy_asuransi_pensiun_prov">-</strong>
+                            <strong id="yoy_pegawai_BKPSDM_prov">-</strong>
                           </h5>
                           <span class="text-white text-sm">Y on Y (Provinsi)</span>
                         </div>
@@ -763,14 +963,14 @@
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card" id="ctc_asuransi_pensiun_prov-card">
+                  <div class="card" id="ctc_pegawai_BKPSDM_prov-card">
                     <!-- Mask dihapus agar warna background bisa diganti -->
                     <div class="card-body p-3 position-relative">
                       <div class="row">
                         <div class="col-8 text-start">
                           <span class="text-white text-sm"></span>
                           <h5 class="text-white font-weight-bolder mb-0 mt-3">
-                            <strong id="ctc_asuransi_pensiun_prov">-</strong>
+                            <strong id="ctc_pegawai_BKPSDM_prov">-</strong>
                           </h5>
                           <span class="text-white text-sm">C to C (Provinsi)</span>
                         </div>
@@ -793,197 +993,25 @@
               </div>
             </div>
           </div>
-        </div>
-        <br>
-         
-        <div class="container-fluid py-4">
-          <h4>K.3. Jasa Keuangan Lainnya</h4>
+          <br>
+          <!-- Grafik Produksi -->
           <div class="row">
-            <div class="col-12">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card" id="qtq_keuangan_lainnya_prov-card">
-                    <!-- Mask dihapus agar warna background bisa diganti -->
-                    <div class="card-body p-3 position-relative">
-                      <div class="row">
-                        <div class="col-8 text-start">
-                          <span class="text-white text-sm"></span>
-                          <h5 class="text-white font-weight-bolder mb-0 mt-3">
-                            <strong id="qtq_keuangan_lainnya_prov">-</strong>
-                          </h5>
-                          <span class="text-white text-sm">Q to Q (Provinsi)</span>
-                        </div>
-                        <div class="col-4">
-                          <div class="dropdown text-end mb-6">
-                            <a href="javascript:;" class="cursor-pointer" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa fa-ellipsis-h text-white"></i>
-                            </a>
-                            <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownUsers1">
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <!-- KIRI: Chart Produksi -->
+            <div class="">
+              <div class="card shadow h-100">
+                <div class="card-header pb-0 p-3">
+                  <h6 class="mb-0">Grafik Jumlah Pegawai (Data BKPSDM)</h6>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card" id="yoy_keuangan_lainnya_prov-card">
-                    <!-- Mask dihapus agar warna background bisa diganti -->
-                    <div class="card-body p-3 position-relative">
-                      <div class="row">
-                        <div class="col-8 text-start">
-                          <span class="text-white text-sm"></span>
-                          <h5 class="text-white font-weight-bolder mb-0 mt-3">
-                            <strong id="yoy_keuangan_lainnya_prov">-</strong>
-                          </h5>
-                          <span class="text-white text-sm">Y on Y (Provinsi)</span>
-                        </div>
-                        <div class="col-4">
-                          <div class="dropdown text-end mb-6">
-                            <a href="javascript:;" class="cursor-pointer" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa fa-ellipsis-h text-white"></i>
-                            </a>
-                            <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownUsers1">
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card" id="ctc_keuangan_lainnya_prov-card">
-                    <!-- Mask dihapus agar warna background bisa diganti -->
-                    <div class="card-body p-3 position-relative">
-                      <div class="row">
-                        <div class="col-8 text-start">
-                          <span class="text-white text-sm"></span>
-                          <h5 class="text-white font-weight-bolder mb-0 mt-3">
-                            <strong id="ctc_keuangan_lainnya_prov">-</strong>
-                          </h5>
-                          <span class="text-white text-sm">C to C (Provinsi)</span>
-                        </div>
-                        <div class="col-4">
-                          <div class="dropdown text-end mb-6">
-                            <a href="javascript:;" class="cursor-pointer" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa fa-ellipsis-h text-white"></i>
-                            </a>
-                            <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownUsers1">
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="card-body p-3" style="height: 300px;">
+                  <canvas id="chart_pegawai_BKPSDM" style="height: 100% !important;" 
+                    data-labels=""
+                    data-values="">
+                  </canvas>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <br>
-
-        <div class="container-fluid py-4">
-          <h4>K.4. Jasa Penunjang Keuangan</h4>
-          <div class="row">
-            <div class="col-12">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card" id="qtq_penunjang_keuangan_prov-card">
-                    <!-- Mask dihapus agar warna background bisa diganti -->
-                    <div class="card-body p-3 position-relative">
-                      <div class="row">
-                        <div class="col-8 text-start">
-                          <span class="text-white text-sm"></span>
-                          <h5 class="text-white font-weight-bolder mb-0 mt-3">
-                            <strong id="qtq_penunjang_keuangan_prov">-</strong>
-                          </h5>
-                          <span class="text-white text-sm">Q to Q (Provinsi)</span>
-                        </div>
-                        <div class="col-4">
-                          <div class="dropdown text-end mb-6">
-                            <a href="javascript:;" class="cursor-pointer" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa fa-ellipsis-h text-white"></i>
-                            </a>
-                            <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownUsers1">
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card" id="yoy_penunjang_keuangan_prov-card">
-                    <!-- Mask dihapus agar warna background bisa diganti -->
-                    <div class="card-body p-3 position-relative">
-                      <div class="row">
-                        <div class="col-8 text-start">
-                          <span class="text-white text-sm"></span>
-                          <h5 class="text-white font-weight-bolder mb-0 mt-3">
-                            <strong id="yoy_penunjang_keuangan_prov">-</strong>
-                          </h5>
-                          <span class="text-white text-sm">Y on Y (Provinsi)</span>
-                        </div>
-                        <div class="col-4">
-                          <div class="dropdown text-end mb-6">
-                            <a href="javascript:;" class="cursor-pointer" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa fa-ellipsis-h text-white"></i>
-                            </a>
-                            <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownUsers1">
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="card" id="ctc_penunjang_keuangan_prov-card">
-                    <!-- Mask dihapus agar warna background bisa diganti -->
-                    <div class="card-body p-3 position-relative">
-                      <div class="row">
-                        <div class="col-8 text-start">
-                          <span class="text-white text-sm"></span>
-                          <h5 class="text-white font-weight-bolder mb-0 mt-3">
-                            <strong id="ctc_penunjang_keuangan_prov">-</strong>
-                          </h5>
-                          <span class="text-white text-sm">C to C (Provinsi)</span>
-                        </div>
-                        <div class="col-4">
-                          <div class="dropdown text-end mb-6">
-                            <a href="javascript:;" class="cursor-pointer" id="dropdownUsers1" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa fa-ellipsis-h text-white"></i>
-                            </a>
-                            <ul class="dropdown-menu px-2 py-3" aria-labelledby="dropdownUsers1">
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
-                              <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div>  
       </div>
 
       <!-- KANAN: Review -->
@@ -1239,10 +1267,10 @@
       localStorage.setItem("selectedTriwulan", triwulanDropdown.value);
     });
   </script>
-  <script src="../assets/js/K.js"></script>
+  <script src="../assets/js/O.js"></script>
   <script src="../assets/js/fenomena.js"></script>
-  <script src="../assets/js/K_Prov.js"></script>
+  <script src="../assets/js/O_Prov.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2" defer></script>
 </body>
 
-</html> 
+</html>

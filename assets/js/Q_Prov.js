@@ -41,46 +41,46 @@ function updateAllUraian() {
   // Tambahkan semua uraian kategori A yang ingin ditampilkan
   fetchQTQValue({
     baseUrl,
-    uraian: "Informasi dan Komunikasi",
+    uraian: "Jasa Kesehatan dan Kegiatan Sosial",
     judul: "tabel 4",
-    targetId: "qtq_informasi_komunikasi_prov"
+    targetId: "qtq_fungsi_kesehatan_prov"
   });
 
   fetchQTQValue({
     baseUrl,
-    uraian: "Informasi dan Komunikasi",
+    uraian: "Jasa Kesehatan dan Kegiatan Sosial",
     judul: "tabel 5",
-    targetId: "yoy_informasi_komunikasi_prov"
+    targetId: "yoy_fungsi_kesehatan_prov"
   });
 
   fetchQTQValue({
     baseUrl,
-    uraian: "Informasi dan Komunikasi",
+    uraian: "Jasa Kesehatan dan Kegiatan Sosial",
     judul: "tabel 6",
-    targetId: "ctc_informasi_komunikasi_prov"
+    targetId: "ctc_fungsi_kesehatan_prov"
   });
 
   // Tambah lagi jika ada kartu lain...
 
   fetchQTQValue({
     baseUrl,
-    uraian: "Konstruksi",
+    uraian: "Jasa Kesehatan dan Kegiatan Sosial",
     judul: "tabel 4",
-    targetId: "qtq_nilai_proyek_prov"
+    targetId: "qtq_jumlah_pasien_prov"
   });
 
   fetchQTQValue({
     baseUrl,
-    uraian: "Konstruksi",
+    uraian: "Jasa Kesehatan dan Kegiatan Sosial",
     judul: "tabel 5",
-    targetId: "yoy_nilai_proyek_prov"
+    targetId: "yoy_jumlah_pasien_prov"
   });
 
   fetchQTQValue({
     baseUrl,
-    uraian: "Konstruksi",
+    uraian: "Jasa Kesehatan dan Kegiatan Sosial",
     judul: "tabel 6",
-    targetId: "ctc_nilai_proyek_prov"
+    targetId: "ctc_jumlah_pasien_prov"
   });
 }
 

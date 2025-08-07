@@ -41,90 +41,46 @@ function updateAllUraian() {
   // Tambahkan semua uraian kategori A yang ingin ditampilkan
   fetchQTQValue({
     baseUrl,
-    uraian: "a. tanaman pangan",
+    uraian: "Jasa Pendidikan",
     judul: "tabel 4",
-    targetId: "qtq_tanam_pangan_prov"
+    targetId: "qtq_fungsi_pendidikan_prov"
   });
 
   fetchQTQValue({
     baseUrl,
-    uraian: "a. tanaman pangan",
+    uraian: "Jasa Pendidikan",
     judul: "tabel 5",
-    targetId: "yoy_tanam_pangan_prov"
+    targetId: "yoy_fungsi_pendidikan_prov"
   });
 
   fetchQTQValue({
     baseUrl,
-    uraian: "a. tanaman pangan",
+    uraian: "Jasa Pendidikan",
     judul: "tabel 6",
-    targetId: "ctc_tanam_pangan_prov"
-  });
-
-  fetchQTQValue({
-    baseUrl,
-    uraian: "a. tanaman pangan",
-    judul: "tabel 4",
-    targetId: "qtq_padi_palawija_prov"
-  });
-
-  fetchQTQValue({
-    baseUrl,
-    uraian: "a. tanaman pangan",
-    judul: "tabel 5",
-    targetId: "yoy_padi_palawija_prov"
-  });
-
-  fetchQTQValue({
-    baseUrl,
-    uraian: "a. tanaman pangan",
-    judul: "tabel 6",
-    targetId: "ctc_padi_palawija_prov"
+    targetId: "ctc_fungsi_pendidikan_prov"
   });
 
   // Tambah lagi jika ada kartu lain...
 
   fetchQTQValue({
     baseUrl,
-    uraian: "b. tanaman hortikultura semusim",
+    uraian: "Jasa Pendidikan",
     judul: "tabel 4",
-    targetId: "qtq_horti_semusim_prov"
+    targetId: "qtq_jumlah_siswa_prov"
   });
 
   fetchQTQValue({
     baseUrl,
-    uraian: "b. tanaman hortikultura semusim",
+    uraian: "Jasa Pendidikan",
     judul: "tabel 5",
-    targetId: "yoy_horti_semusim_prov"
+    targetId: "yoy_jumlah_siswa_prov"
   });
 
   fetchQTQValue({
     baseUrl,
-    uraian: "b. tanaman hortikultura semusim",
+    uraian: "Jasa Pendidikan",
     judul: "tabel 6",
-    targetId: "ctc_horti_semusim_prov"
-  });
-
-  // Tambah lagi jika ada kartu lain...
-
-  fetchQTQValue({
-    baseUrl,
-    uraian: "d. Tanaman Hortikultura Tahunan dan Lainnya",
-    judul: "tabel 4",
-    targetId: "qtq_horti_tahunan_prov"
-  });
-
-  fetchQTQValue({
-    baseUrl,
-    uraian: "d. Tanaman Hortikultura Tahunan dan Lainnya",
-    judul: "tabel 5",
-    targetId: "yoy_horti_tahunan_prov"
-  });
-
-  fetchQTQValue({
-    baseUrl,
-    uraian: "d. Tanaman Hortikultura Tahunan dan Lainnya",
-    judul: "tabel 6",
-    targetId: "ctc_horti_tahunan_prov"
+    targetId: "ctc_jumlah_siswa_prov"
   });
 }
 

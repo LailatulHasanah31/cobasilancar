@@ -3,34 +3,15 @@ const BASE_URL = "https://script.google.com/macros/s/AKfycbxFbrDM6xaDp9eUNt14S0v
 // List komoditas & grafik yang dimiliki
 const komoditasList = [
   {
-    key: "tanam_pangan",
+    key: "belanja_apbn_pkp",
     charts: [
-      { id: "chart_produksi_tanam_pangan", dataKey: "produksi" },   
-      { id: "chart_produktivitas_tanam_pangan", dataKey: "produktivitas" }
+      { id: "chart_belanja_apbn_pkp", dataKey: "belanja" }
     ]
   },
   {
-    key: "padi_palawija",
+    key: "pegawai_BKPSDM",
     charts: [
-      { id: "chart_padi_palawija", dataKey: "produksi" }
-    ]
-  },
-  {
-    key: "horti_semusim",
-    charts: [
-      { id: "chart_produksi_horti_semusim", dataKey: "produksi" }
-    ]
-  },
-  {
-    key: "horti_tahunan",
-    charts: [
-      { id: "chart_produksi_horti_tahunan", dataKey: "produksi" }
-    ]
-  },
-  {
-    key: "perkebunan_sawit",
-    charts: [
-      { id: "chart_produksi_perkebunan_sawit", dataKey: "produksi" }
+      { id: "chart_pegawai_BKPSDM", dataKey: "pegawai" }
     ]
   }
 ];
