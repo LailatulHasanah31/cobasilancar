@@ -126,6 +126,120 @@ function updateAllUraian() {
     judul: "tabel 6",
     targetId: "ctc_horti_tahunan_prov"
   });
+  // Tambah lagi jika ada kartu lain...
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "e. Perkebunan Tahunan",
+    judul: "tabel 4",
+    targetId: "qtq_perkebunan_sawit_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "e. Perkebunan Tahunan",
+    judul: "tabel 5",
+    targetId: "yoy_perkebunan_sawit_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "e. Perkebunan Tahunan",
+    judul: "tabel 6",
+    targetId: "ctc_perkebunan_sawit_prov"
+  });
+    
+  // Tambah lagi jika ada kartu lain...
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "f. Peternakan",
+    judul: "tabel 4",
+    targetId: "qtq_peternakan_dinas_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "f. Peternakan",
+    judul: "tabel 5",
+    targetId: "yoy_peternakan_dinas_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "f. Peternakan",
+    judul: "tabel 6",
+    targetId: "ctc_peternakan_dinas_prov"
+  });
+
+  // Tambah lagi jika ada kartu lain...
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "f. Peternakan",
+    judul: "tabel 4",
+    targetId: "qtq_peternakan_bps_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "f. Peternakan",
+    judul: "tabel 5",
+    targetId: "yoy_peternakan_bps_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "f. Peternakan",
+    judul: "tabel 6",
+    targetId: "ctc_peternakan_bps_prov"
+  });
+    
+  // Tambah lagi jika ada kartu lain...
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "g. Jasa Pertanian dan Perburuan",
+    judul: "tabel 4",
+    targetId: "qtq_pertanian_perburuan_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "g. Jasa Pertanian dan Perburuan",
+    judul: "tabel 5",
+    targetId: "yoy_pertanian_perburuan_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "g. Jasa Pertanian dan Perburuan",
+    judul: "tabel 6",
+    targetId: "ctc_pertanian_perburuan_prov"
+  });
+
+  // Tambah lagi jika ada kartu lain...
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Kehutanan dan Penebangan Kayu",
+    judul: "tabel 4",
+    targetId: "qtq_kehutanan_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Kehutanan dan Penebangan Kayu",
+    judul: "tabel 5",
+    targetId: "yoy_kehutanan_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Kehutanan dan Penebangan Kayu",
+    judul: "tabel 6",
+    targetId: "ctc_kehutanan_prov"
+  });
 }
 
 function convertTriwulan(code) {

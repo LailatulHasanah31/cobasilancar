@@ -32,6 +32,18 @@ const komoditasList = [
     charts: [
       { id: "chart_produksi_perkebunan_sawit", dataKey: "produksi" }
     ]
+  },
+  {
+    key: "peternakan_dinas",
+    charts: [
+      { id: "chart_peternakan_dinas", dataKey: "produksi" }
+    ]
+  },
+  {
+    key: "peternakan_bps",
+    charts: [
+      { id: "chart_peternakan_bps", dataKey: "produksi" }
+    ]
   }
 ];
 
