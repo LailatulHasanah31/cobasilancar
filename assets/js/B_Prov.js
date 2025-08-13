@@ -82,6 +82,28 @@ function updateAllUraian() {
     judul: "tabel 6",
     targetId: "ctc_pertambangan_bijih_prov"
   });
+  // Tambah lagi jika ada kartu lain...
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Pertambangan dan Penggalian Lainnya",
+    judul: "tabel 4",
+    targetId: "qtq_pertambangan_lainnya_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Pertambangan dan Penggalian Lainnya",
+    judul: "tabel 5",
+    targetId: "yoy_pertambangan_lainnya_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Pertambangan dan Penggalian Lainnya",
+    judul: "tabel 6",
+    targetId: "ctc_pertambangan_lainnya_prov"
+  });
 }
 
 function convertTriwulan(code) {
