@@ -507,7 +507,7 @@
             <li class="nav-item d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
                 <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign Out</span>
+                <button onclick="logout()" style="background-color: rgb(231, 132, 132);"><h6>Logout</h6></button>
               </a>
             </li>
             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
@@ -609,6 +609,7 @@
         <div class="container-fluid py-4">
           <div class="row">
             <div class="col-12">
+              <h4>Angka PDRB Provinsi</h4>
               <div class="row">
                 <div class="col-lg-4 col-md-6 col-12">
                   <div class="card" id="qtq_informasi_komunikasi_prov-card">
@@ -958,6 +959,22 @@
   <script src="../assets/js/fenomena.js"></script>
   <script src="../assets/js/J_Prov.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2" defer></script>
+  <script>
+    const now = new Date().getTime();
+    const loginToken = localStorage.getItem("loginToken");
+    const loginExpiry = localStorage.getItem("loginExpiry");
+
+    // Cek apakah login valid
+    if (!loginToken || now > loginExpiry) {
+      localStorage.clear();
+      window.location.href = "Login.html";
+    }
+
+    function logout() {
+      localStorage.clear();
+      window.location.href = "Login.html";
+    }
+  </script>
 </body>
 
 </html> 
