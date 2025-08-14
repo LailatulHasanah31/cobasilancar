@@ -240,6 +240,69 @@ function updateAllUraian() {
     judul: "tabel 6",
     targetId: "ctc_komputer_prov"
   });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Industri Alat Angkutan",
+    judul: "tabel 4",
+    targetId: "qtq_alat_angkut_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Industri Alat Angkutan",
+    judul: "tabel 5",
+    targetId: "yoy_alat_angkut_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Industri Alat Angkutan",
+    judul: "tabel 6",
+    targetId: "ctc_alat_angkut_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Industri Furnitur",
+    judul: "tabel 4",
+    targetId: "qtq_furnitur_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Industri Furnitur",
+    judul: "tabel 5",
+    targetId: "yoy_furnitur_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Industri Furnitur",
+    judul: "tabel 6",
+    targetId: "ctc_furnitur_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
+    judul: "tabel 4",
+    targetId: "qtq_pengolahan_reparasi_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
+    judul: "tabel 5",
+    targetId: "yoy_pengolahan_reparasi_prov"
+  });
+
+  fetchQTQValue({
+    baseUrl,
+    uraian: "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
+    judul: "tabel 6",
+    targetId: "ctc_pengolahan_reparasi_prov"
+  });
 }
 
 function convertTriwulan(code) {
